@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="夏野菜の定植リレー──連休からスイカまで — はいばら農園の栽培記録"><meta name="generator" content="Astro v6.1.7"><link rel="canonical" href="https://haibara-farm.github.io/blog/2026-05-10_summer-vegetables-relay/"><!-- Open Graph --><meta property="og:type" content="article"><meta property="og:site_name" content="はいばら農園"><meta property="og:title" content="夏野菜の定植リレー──連休からスイカまで | はいばら農園"><meta property="og:description" content="夏野菜の定植リレー──連休からスイカまで — はいばら農園の栽培記録"><meta property="og:url" content="https://haibara-farm.github.io/blog/2026-05-10_summer-vegetables-relay/"><meta property="og:image" content="https://haibara-farm.github.io/images/watermelon-planting.jpg"><meta property="og:locale" content="ja_JP"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="夏野菜の定植リレー──連休からスイカまで | はいばら農園"><meta name="twitter:description" content="夏野菜の定植リレー──連休からスイカまで — はいばら農園の栽培記録"><meta name="twitter:image" content="https://haibara-farm.github.io/images/watermelon-planting.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet"><title>夏野菜の定植リレー──連休からスイカまで | はいばら農園</title><link rel="stylesheet" href="/_astro/Layout.DgQ1kQ3Y.css">
+<style>.post-body[data-astro-cid-2q5oecfc] p{margin-bottom:1.2rem;line-height:2;color:#3a3530;font-size:.92rem}.post-body[data-astro-cid-2q5oecfc] h2{font-family:"Noto Serif JP",serif;font-size:1.1rem;margin:2.2rem 0 .8rem;color:#2a4a22}.post-body[data-astro-cid-2q5oecfc] h3{font-family:"Noto Serif JP",serif;font-size:.98rem;margin:1.8rem 0 .6rem;color:#2a4a22}.post-body[data-astro-cid-2q5oecfc] ul{margin:0 0 1.2rem 1.4rem;line-height:2}.post-body[data-astro-cid-2q5oecfc] li{margin-bottom:.3rem;font-size:.88rem}.post-body[data-astro-cid-2q5oecfc] img{border-radius:8px;margin:1.2rem 0}.post-body[data-astro-cid-2q5oecfc] blockquote{border-left:3px solid #6a9458;padding-left:1rem;color:#6a7a60;font-size:.88rem;margin:1.2rem 0}.reactions[data-astro-cid-2q5oecfc]{display:flex;gap:.8rem;flex-wrap:wrap}.reaction[data-astro-cid-2q5oecfc]{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:#f5f2ec;border:1px solid #d8d4ca;border-radius:999px;cursor:pointer;font-family:inherit;font-size:.78rem;color:#3a3530;transition:all .2s}.reaction[data-astro-cid-2q5oecfc]:hover{background:#e8f0e0;border-color:#6a9458}.reaction[data-astro-cid-2q5oecfc].active{background:#e8f0e0;border-color:#2a4a22;color:#2a4a22}.reaction[data-astro-cid-2q5oecfc] .emoji[data-astro-cid-2q5oecfc]{font-size:1rem}.reaction[data-astro-cid-2q5oecfc] .count[data-astro-cid-2q5oecfc]{font-size:.72rem;color:#8a9a80;font-family:Georgia,serif;min-width:.8rem;text-align:right}.reaction[data-astro-cid-2q5oecfc].active .count[data-astro-cid-2q5oecfc]{color:#2a4a22}.comment-item[data-astro-cid-2q5oecfc]{padding:.9rem 1rem;background:#faf8f3;border-radius:6px;margin-bottom:.6rem;font-size:.82rem;line-height:1.8;color:#3a3530}.comment-item[data-astro-cid-2q5oecfc] .meta[data-astro-cid-2q5oecfc]{font-size:.68rem;color:#8a9a80;letter-spacing:.1em;margin-bottom:.3rem}
+</style></head> <body> <header id="site-header" class> <a href="/" id="site-logo-link"> <img src="/logo.svg" alt="はいばら農園" id="site-logo"> </a> <nav id="site-nav"> <a href="/about" class="nav-link">農園について</a> <a href="/crops" class="nav-link">作物紹介</a> <a href="/blog" class="nav-link">栽培記録</a> <a href="/calendar" class="nav-link">栽培暦</a> <a href="/tips" class="nav-link">栽培のヒント</a> <a href="/contact" class="nav-link">お問い合わせ</a> </nav> <button id="site-nav-toggle" aria-label="メニュー" aria-expanded="false"> <span></span><span></span><span></span> </button> </header>  <script>
+      (function() {
+        const header = document.getElementById('site-header');
+        const startedHero = header.classList.contains('is-hero');
+
+        let lastScrollY = window.scrollY;
+        const HIDE_THRESHOLD = 80; // この位置を超えるとhide可能
+
+        window.addEventListener('scroll', () => {
+          const currentY = window.scrollY;
+
+          // ヒーローページの背景切替
+          if (startedHero) {
+            if (currentY > 60) {
+              header.classList.remove('is-hero');
+            } else {
+              header.classList.add('is-hero');
+            }
+          }
+
+          // ナビが開いている時 or 最上部付近では隠さない
+          if (header.classList.contains('nav-open') || currentY < HIDE_THRESHOLD) {
+            header.classList.remove('is-hidden');
+          } else if (currentY > lastScrollY) {
+            // 下スクロール → 隠す
+            header.classList.add('is-hidden');
+          } else if (currentY < lastScrollY) {
+            // 上スクロール → 表示
+            header.classList.remove('is-hidden');
+          }
+
+          lastScrollY = currentY;
+        }, { passive: true });
+
+        // ハンバーガーメニュー開閉
+        const toggle = document.getElementById('site-nav-toggle');
+        const nav = document.getElementById('site-nav');
+        if (toggle) {
+          toggle.addEventListener('click', () => {
+            const open = header.classList.toggle('nav-open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            // メニュー開く時は隠さない
+            if (open) header.classList.remove('is-hidden');
+          });
+          // ナビ内リンククリックで閉じる
+          nav.querySelectorAll('.nav-link').forEach(a => {
+            a.addEventListener('click', () => {
+              header.classList.remove('nav-open');
+              toggle.setAttribute('aria-expanded', 'false');
+            });
+          });
+        }
+      })();
+    </script> <main> <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"夏野菜の定植リレー──連休からスイカまで","datePublished":"2026-05-10","image":"https://haibara-farm.github.io/images/watermelon-planting.jpg","author":{"@type":"Organization","name":"はいばら農園"},"publisher":{"@type":"Organization","name":"はいばら農園"},"keywords":"野菜, なす, ピーマン, とうもろこし, スイカ, 定植","mainEntityOfPage":"https://haibara-farm.github.io/blog/2026-05-10_summer-vegetables-relay/"}</script> <div class="page" data-astro-cid-2q5oecfc> <div class="page-inner" style="--page-max: 760px;" data-astro-cid-2q5oecfc> <p class="page-eyebrow" data-astro-cid-2q5oecfc>JOURNAL</p> <p style="font-size:0.72rem;color:#8a9a80;letter-spacing:0.15em;font-family:'Georgia',serif;margin-bottom:0.4rem;" data-astro-cid-2q5oecfc>2026-05-10</p> <h1 style="font-size:1.35rem;line-height:1.7;" data-astro-cid-2q5oecfc>夏野菜の定植リレー──連休からスイカまで</h1> <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:2rem;margin-top:0.8rem;" data-astro-cid-2q5oecfc> <span class="tag-item" data-astro-cid-2q5oecfc>野菜</span><span class="tag-item" data-astro-cid-2q5oecfc>なす</span><span class="tag-item" data-astro-cid-2q5oecfc>ピーマン</span><span class="tag-item" data-astro-cid-2q5oecfc>とうもろこし</span><span class="tag-item" data-astro-cid-2q5oecfc>スイカ</span><span class="tag-item" data-astro-cid-2q5oecfc>定植</span> </div> <div style="aspect-ratio:16/10;overflow:hidden;border-radius:10px;margin-bottom:2rem;background:#e8f0e0;" data-astro-cid-2q5oecfc> <img src="/_astro/watermelon-planting.iNIkdMnQ_ZpumXc.webp" srcset="/_astro/watermelon-planting.iNIkdMnQ_Z18RA8I.webp 400w, /_astro/watermelon-planting.iNIkdMnQ_fxlNk.webp 760w, /_astro/watermelon-planting.iNIkdMnQ_2c9iPc.webp 1200w" alt="夏野菜の定植リレー──連休からスイカまで" sizes="(max-width:760px) 100vw, 760px" loading="eager" style="width:100%;height:100%;object-fit:cover;" data-astro-cid-2q5oecfc="true" decoding="async" width="4032" height="2268"> </div>  <article class="post-body" data-astro-cid-2q5oecfc> <p>ゴールデンウィークから5月中旬にかけて、夏野菜の定植が一気に進みました。なす・ピーマン・とうもろこし、そしてスイカ。それぞれ植え方が違い、必要な準備も変わります。</p>
+<h2 id="5月2日3品目を一気に定植">5月2日：3品目を一気に定植</h2>
+<p>連休中の好天を狙って、夏野菜を一斉に圃場へ。</p>
+<p><strong>なす</strong>
+苗（TOKITAの苗）を購入して定植。複葉が2〜3枚ほどの若い苗で、これから支柱を立てて誘引していきます。</p>
+<p><strong>ピーマン</strong>
+こちらも苗を購入して定植。日当たりの良い場所に並べました。</p>
+<p><strong>とうもろこし（ドルチェドリーム）</strong>
+畝に黒マルチを張り、穴をあけて1穴ずつ播種。マルチの保温・保湿効果で発芽を安定させます。</p>
+<h2 id="5月10日スイカに行燈をかぶせる">5月10日：スイカに行燈をかぶせる</h2>
+<p>連休明け、最後のひと品目としてスイカを定植。スイカは寒さに弱く、5月初旬の朝晩はまだ冷え込むため、<strong>ビニールの行燈（あんどん）</strong> で苗を覆って保温します。</p>
+<p>工夫したポイント：</p>
+<ul>
+<li><strong>黒マルチで地温を安定</strong></li>
+<li><strong>行燈で外気の冷えをブロック</strong></li>
+<li><strong>敷きわらで雑草抑制と乾燥防止</strong></li>
+</ul>
+<p>行燈は梅雨明け前後に外す予定です。</p>
+<h2 id="これからのケア">これからのケア</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>作物</th><th>主なケア</th></tr></thead><tbody><tr><td>なす</td><td>支柱誘引・整枝・追肥</td></tr><tr><td>ピーマン</td><td>支柱誘引・整枝・追肥</td></tr><tr><td>とうもろこし</td><td>発芽確認・間引き・除房</td></tr><tr><td>スイカ</td><td>行燈外し・整枝・着果管理・敷きわら追加</td></tr></tbody></table>
+<p>それぞれ収穫は <strong>7月〜8月</strong> が目安。連休に植えたものが2〜3ヶ月後に食卓に上がる、夏野菜ならではのスピード感です。</p> </article> <!-- リアクション --> <div class="page-section" data-astro-cid-2q5oecfc><span data-astro-cid-2q5oecfc>REACTIONS ／ リアクション</span></div> <div class="pcard" data-astro-cid-2q5oecfc> <div class="pcard-body" style="padding:1.4rem;" data-astro-cid-2q5oecfc> <p style="font-size:0.78rem;color:#6a7a60;margin-bottom:1rem;" data-astro-cid-2q5oecfc>この記事にリアクション</p> <div class="reactions" data-post="/blog/2026-05-10_summer-vegetables-relay/" data-astro-cid-2q5oecfc> <button class="reaction" data-key="cheer" data-astro-cid-2q5oecfc><span class="emoji" data-astro-cid-2q5oecfc>🌱</span><span class="label" data-astro-cid-2q5oecfc>応援</span><span class="count" data-astro-cid-2q5oecfc>0</span></button> <button class="reaction" data-key="like" data-astro-cid-2q5oecfc><span class="emoji" data-astro-cid-2q5oecfc>💚</span><span class="label" data-astro-cid-2q5oecfc>いいね</span><span class="count" data-astro-cid-2q5oecfc>0</span></button> <button class="reaction" data-key="beautiful" data-astro-cid-2q5oecfc><span class="emoji" data-astro-cid-2q5oecfc>🌸</span><span class="label" data-astro-cid-2q5oecfc>きれい</span><span class="count" data-astro-cid-2q5oecfc>0</span></button> <button class="reaction" data-key="excited" data-astro-cid-2q5oecfc><span class="emoji" data-astro-cid-2q5oecfc>🎉</span><span class="label" data-astro-cid-2q5oecfc>楽しみ</span><span class="count" data-astro-cid-2q5oecfc>0</span></button> </div> </div> </div> <!-- コメント --> <div class="page-section" data-astro-cid-2q5oecfc><span data-astro-cid-2q5oecfc>COMMENTS ／ コメント</span></div> <div class="pcard" data-astro-cid-2q5oecfc> <div class="pcard-body" style="padding:1.4rem;" data-astro-cid-2q5oecfc> <form class="comment-form" onsubmit="return submitComment(event)" data-astro-cid-2q5oecfc> <label style="font-size:0.72rem;color:#6a7a60;display:block;margin-bottom:0.4rem;" data-astro-cid-2q5oecfc>お名前（任意）</label> <input type="text" name="name" placeholder="はいばらさん" style="width:100%;padding:0.6rem 0.8rem;border:1px solid #d8d4ca;border-radius:4px;font-size:0.82rem;font-family:inherit;background:#faf8f3;margin-bottom:1rem;" data-astro-cid-2q5oecfc> <label style="font-size:0.72rem;color:#6a7a60;display:block;margin-bottom:0.4rem;" data-astro-cid-2q5oecfc>コメント</label> <textarea name="comment" rows="4" required placeholder="収穫が楽しみですね！" style="width:100%;padding:0.6rem 0.8rem;border:1px solid #d8d4ca;border-radius:4px;font-size:0.82rem;font-family:inherit;background:#faf8f3;resize:vertical;" data-astro-cid-2q5oecfc></textarea> <button type="submit" style="margin-top:1rem;padding:0.7rem 2rem;background:#2a4a22;color:white;border:none;border-radius:4px;font-size:0.78rem;letter-spacing:0.1em;cursor:pointer;font-family:inherit;" data-astro-cid-2q5oecfc>
+コメントを送る
+</button> </form> <div id="comment-list" style="margin-top:1.6rem;" data-astro-cid-2q5oecfc></div> </div> </div> <div style="margin-top:3rem;text-align:center;" data-astro-cid-2q5oecfc> <a href="/blog" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.72rem;letter-spacing:0.2em;color:#3d6b30;font-family:'Georgia',serif;" data-astro-cid-2q5oecfc> <span style="width:32px;height:1px;background:#3d6b30;display:inline-block;" data-astro-cid-2q5oecfc></span> 栽培記録一覧へ
+</a> </div> </div> </div> </main> <footer style="background:var(--green-deep);padding:4rem 3rem;color:rgba(255,255,255,0.6);font-size:0.78rem;letter-spacing:0.1em;"> <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem;"> <div> <img src="/logo.svg" alt="はいばら農園" style="height:44px;filter:brightness(0) invert(1);opacity:0.7;margin-bottom:1rem;"> <p>ぶどう・桃・レモン・梨・野菜</p> <p style="margin-top:0.3rem;font-size:0.68rem;letter-spacing:0.15em;opacity:0.5;">HAIBARA FARM</p> </div> <nav style="display:flex;flex-direction:column;gap:0.6rem;text-align:right;"> <a href="/about" style="color:rgba(255,255,255,0.5);">農園について</a> <a href="/crops" style="color:rgba(255,255,255,0.5);">作物紹介</a> <a href="/blog" style="color:rgba(255,255,255,0.5);">栽培記録</a> <a href="/tips" style="color:rgba(255,255,255,0.5);">栽培のヒント</a> <a href="/contact" style="color:rgba(255,255,255,0.5);">お問い合わせ</a> <a href="/privacy" style="color:rgba(255,255,255,0.5);">プライバシーポリシー</a> </nav> </div> <div style="max-width:1100px;margin:2.5rem auto 0;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.65rem;letter-spacing:0.12em;opacity:0.4;">
+&copy; 2026 はいばら農園 ／ 奈良県宇陀市
+</div> </footer> </body></html>  <script>
+  (function() {
+    const root = document.querySelector('.reactions');
+    if (!root) return;
+    const postKey = 'reactions:' + root.dataset.post;
+    const votedKey = 'voted:' + root.dataset.post;
+    const counts = JSON.parse(localStorage.getItem(postKey) || '{}');
+    const voted = JSON.parse(localStorage.getItem(votedKey) || '{}');
+
+    root.querySelectorAll('.reaction').forEach(btn => {
+      const key = btn.dataset.key;
+      const countEl = btn.querySelector('.count');
+      countEl.textContent = counts[key] || 0;
+      if (voted[key]) btn.classList.add('active');
+
+      btn.addEventListener('click', () => {
+        if (voted[key]) {
+          counts[key] = Math.max(0, (counts[key] || 1) - 1);
+          delete voted[key];
+          btn.classList.remove('active');
+        } else {
+          counts[key] = (counts[key] || 0) + 1;
+          voted[key] = true;
+          btn.classList.add('active');
+        }
+        countEl.textContent = counts[key];
+        localStorage.setItem(postKey, JSON.stringify(counts));
+        localStorage.setItem(votedKey, JSON.stringify(voted));
+      });
+    });
+  })();
+
+  function submitComment(e) {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value.trim() || '名無し';
+    const comment = form.comment.value.trim();
+    if (!comment) return false;
+
+    const key = 'comments:' + location.pathname;
+    const list = JSON.parse(localStorage.getItem(key) || '[]');
+    list.push({ name: name, comment: comment, date: new Date().toISOString().slice(0,10) });
+    localStorage.setItem(key, JSON.stringify(list));
+    form.reset();
+    renderComments();
+    return false;
+  }
+
+  function renderComments() {
+    const target = document.getElementById('comment-list');
+    if (!target) return;
+    const key = 'comments:' + location.pathname;
+    const list = JSON.parse(localStorage.getItem(key) || '[]');
+    if (list.length === 0) {
+      target.innerHTML = '<p style="font-size:0.78rem;color:#8a9a80;">まだコメントはありません。</p>';
+      return;
+    }
+    target.innerHTML = list.map(c =>
+      '<div class="comment-item"><div class="meta">' + c.name + ' ／ ' + c.date + '</div>' + c.comment.replace(/</g,'&lt;') + '</div>'
+    ).join('');
+  }
+  renderComments();
+</script>

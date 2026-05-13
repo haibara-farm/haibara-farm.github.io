@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="シャインマスカットなどの「種なしぶどう」は、開花前後にジベレリンを浸漬処理することで作られます。満開14日前のストマイ前処理から、満開期・満開後10〜15日の2回のジベ処理まで、一連の流れと注意点をまとめます。"><meta name="generator" content="Astro v6.1.7"><link rel="canonical" href="https://haibara-farm.github.io/tips/2026-05-05_grape-gibberellin/"><!-- Open Graph --><meta property="og:type" content="article"><meta property="og:site_name" content="はいばら農園"><meta property="og:title" content="ぶどうの種なし化（ジベレリン処理）の流れ | はいばら農園"><meta property="og:description" content="シャインマスカットなどの「種なしぶどう」は、開花前後にジベレリンを浸漬処理することで作られます。満開14日前のストマイ前処理から、満開期・満開後10〜15日の2回のジベ処理まで、一連の流れと注意点をまとめます。"><meta property="og:url" content="https://haibara-farm.github.io/tips/2026-05-05_grape-gibberellin/"><meta property="og:image" content="https://haibara-farm.github.io/og-image.jpg"><meta property="og:locale" content="ja_JP"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ぶどうの種なし化（ジベレリン処理）の流れ | はいばら農園"><meta name="twitter:description" content="シャインマスカットなどの「種なしぶどう」は、開花前後にジベレリンを浸漬処理することで作られます。満開14日前のストマイ前処理から、満開期・満開後10〜15日の2回のジベ処理まで、一連の流れと注意点をまとめます。"><meta name="twitter:image" content="https://haibara-farm.github.io/og-image.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet"><title>ぶどうの種なし化（ジベレリン処理）の流れ | はいばら農園</title><link rel="stylesheet" href="/_astro/Layout.DgQ1kQ3Y.css">
+<style>.tips-body[data-astro-cid-zneyolrq] p{margin-bottom:1.2rem;line-height:2;color:#3a3530;font-size:.92rem}.tips-body[data-astro-cid-zneyolrq] h2{font-family:Zen Old Mincho,"Noto Serif JP",serif;font-size:1.15rem;margin:2.5rem 0 1rem;color:#2a4a22;padding-bottom:.5rem;border-bottom:1px solid #d8e0d0;letter-spacing:.05em}.tips-body[data-astro-cid-zneyolrq] h3{font-family:"Noto Serif JP",serif;font-size:1rem;margin:1.8rem 0 .6rem;color:#3d6b30;letter-spacing:.04em}.tips-body[data-astro-cid-zneyolrq] ul,.tips-body[data-astro-cid-zneyolrq] ol{margin:0 0 1.2rem 1.4rem;line-height:2}.tips-body[data-astro-cid-zneyolrq] li{margin-bottom:.3rem;font-size:.88rem}.tips-body[data-astro-cid-zneyolrq] strong{color:#2a4a22;font-weight:500}.tips-body[data-astro-cid-zneyolrq] table{width:100%;border-collapse:collapse;font-size:.84rem;margin:1.2rem 0}.tips-body[data-astro-cid-zneyolrq] th{text-align:left;padding:.55rem .7rem;background:#e8ede0;color:#3d6b30;font-size:.74rem;letter-spacing:.08em;font-weight:500;border-bottom:1px solid #d8e0d0}.tips-body[data-astro-cid-zneyolrq] td{padding:.6rem .7rem;border-bottom:1px solid #ece8e0;color:#3a3530}.tips-body[data-astro-cid-zneyolrq] blockquote{border-left:3px solid #6a9458;padding:.4rem 1rem;color:#6a7a60;font-size:.88rem;margin:1.2rem 0;background:#f5f2ec;border-radius:0 4px 4px 0}.tips-body[data-astro-cid-zneyolrq] code{background:#f0ede5;padding:.1rem .4rem;border-radius:3px;font-size:.84em;color:#3d6b30}
+</style></head> <body> <header id="site-header" class> <a href="/" id="site-logo-link"> <img src="/logo.svg" alt="はいばら農園" id="site-logo"> </a> <nav id="site-nav"> <a href="/about" class="nav-link">農園について</a> <a href="/crops" class="nav-link">作物紹介</a> <a href="/blog" class="nav-link">栽培記録</a> <a href="/calendar" class="nav-link">栽培暦</a> <a href="/tips" class="nav-link">栽培のヒント</a> <a href="/contact" class="nav-link">お問い合わせ</a> </nav> <button id="site-nav-toggle" aria-label="メニュー" aria-expanded="false"> <span></span><span></span><span></span> </button> </header>  <script>
+      (function() {
+        const header = document.getElementById('site-header');
+        const startedHero = header.classList.contains('is-hero');
+
+        let lastScrollY = window.scrollY;
+        const HIDE_THRESHOLD = 80; // この位置を超えるとhide可能
+
+        window.addEventListener('scroll', () => {
+          const currentY = window.scrollY;
+
+          // ヒーローページの背景切替
+          if (startedHero) {
+            if (currentY > 60) {
+              header.classList.remove('is-hero');
+            } else {
+              header.classList.add('is-hero');
+            }
+          }
+
+          // ナビが開いている時 or 最上部付近では隠さない
+          if (header.classList.contains('nav-open') || currentY < HIDE_THRESHOLD) {
+            header.classList.remove('is-hidden');
+          } else if (currentY > lastScrollY) {
+            // 下スクロール → 隠す
+            header.classList.add('is-hidden');
+          } else if (currentY < lastScrollY) {
+            // 上スクロール → 表示
+            header.classList.remove('is-hidden');
+          }
+
+          lastScrollY = currentY;
+        }, { passive: true });
+
+        // ハンバーガーメニュー開閉
+        const toggle = document.getElementById('site-nav-toggle');
+        const nav = document.getElementById('site-nav');
+        if (toggle) {
+          toggle.addEventListener('click', () => {
+            const open = header.classList.toggle('nav-open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            // メニュー開く時は隠さない
+            if (open) header.classList.remove('is-hidden');
+          });
+          // ナビ内リンククリックで閉じる
+          nav.querySelectorAll('.nav-link').forEach(a => {
+            a.addEventListener('click', () => {
+              header.classList.remove('nav-open');
+              toggle.setAttribute('aria-expanded', 'false');
+            });
+          });
+        }
+      })();
+    </script> <main> <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ぶどうの種なし化（ジベレリン処理）の流れ","datePublished":"2026-05-05","image":"https://haibara-farm.github.io/og-image.jpg","author":{"@type":"Organization","name":"はいばら農園"},"publisher":{"@type":"Organization","name":"はいばら農園"},"keywords":"ぶどう, ジベレリン, 無種子化, シャインマスカット","mainEntityOfPage":"https://haibara-farm.github.io/tips/2026-05-05_grape-gibberellin/"}</script> <div class="page" data-astro-cid-zneyolrq> <div class="page-inner" style="--page-max: 760px;" data-astro-cid-zneyolrq> <p class="page-eyebrow" data-astro-cid-zneyolrq>TIPS</p> <p style="font-size:0.72rem;color:#8a9a80;letter-spacing:0.15em;font-family:'Georgia',serif;margin-bottom:0.4rem;" data-astro-cid-zneyolrq>2026-05-05</p> <h1 style="font-size:1.4rem;line-height:1.7;" data-astro-cid-zneyolrq>ぶどうの種なし化（ジベレリン処理）の流れ</h1> <p style="font-size:0.86rem;color:#5a5048;line-height:2;margin-top:1rem;" data-astro-cid-zneyolrq>シャインマスカットなどの「種なしぶどう」は、開花前後にジベレリンを浸漬処理することで作られます。満開14日前のストマイ前処理から、満開期・満開後10〜15日の2回のジベ処理まで、一連の流れと注意点をまとめます。</p> <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:1rem;margin-bottom:2.5rem;" data-astro-cid-zneyolrq> <span class="tag-item" data-astro-cid-zneyolrq>ぶどう</span><span class="tag-item" data-astro-cid-zneyolrq>ジベレリン</span><span class="tag-item" data-astro-cid-zneyolrq>無種子化</span><span class="tag-item" data-astro-cid-zneyolrq>シャインマスカット</span> </div> <article class="tips-body" data-astro-cid-zneyolrq> <h2 id="全体の流れ">全体の流れ</h2>
+<p>ぶどうの花穂が出始めてから、3段階の処理を行います。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>段階</th><th>時期</th><th>使用薬剤</th><th>目的</th></tr></thead><tbody><tr><td><strong>前処理</strong></td><td>満開14日前</td><td>アグレプト液剤 200ppm</td><td>流花防止＋無核化補助</td></tr><tr><td><strong>1回目</strong></td><td>満開期</td><td>ジベレリン 25ppm</td><td>無核化＋着粒安定</td></tr><tr><td><strong>2回目</strong></td><td>満開後10〜15日</td><td>ジベレリン 25ppm + フルメット 5ppm</td><td>果粒肥大</td></tr></tbody></table>
+<p>満開を起点に時期を判断するため、<strong>毎日の花穂観察</strong>が欠かせません。</p>
+<blockquote>
+<p>📌 <strong>クイーンニーナの場合</strong>：赤色系品種では着色重視の <strong>ジベレリン1回処理法</strong>（満開3〜5日後にGA25ppm＋フルメット10ppm）も有効です。詳しくは <a href="/tips/2026-05-06_grape-gibberellin-queen-nina">クイーンニーナのジベレリン1回処理法</a> をご覧ください。</p>
+</blockquote>
+<h2 id="前処理アグレプト液剤満開14日前">前処理：アグレプト液剤（満開14日前）</h2>
+<p>満開予定日の14日前に、花穂ごとプラスチックカップで5秒間浸漬します。</p>
+<ul>
+<li><strong>目的</strong>: 花の落ちを防ぎ、後の無核化処理の効果を安定させる</li>
+<li><strong>濃度</strong>: 200ppm（アグレプト液剤の場合、約 1.25mL/L）</li>
+<li><strong>処理対象</strong>: 花蕾が緑色で硬い、まだ開花前の花穂</li>
+</ul>
+<p>花蕾の段階で薬液が触れることで、後のジベレリン処理が効きやすい花穂に整います。</p>
+<h2 id="1回目処理ジベレリン満開期">1回目処理：ジベレリン（満開期）</h2>
+<p>花の80〜100%が開花した「<strong>満開</strong>」のタイミングで、25ppmのジベレリン水溶液に房ごと5秒間浸します。</p>
+<ul>
+<li><strong>目的</strong>: 種を作らせない・粒の数を安定させる</li>
+<li><strong>濃度</strong>: ジベレリン 25ppm</li>
+<li><strong>タイミングが命</strong>: 早すぎると落花、遅すぎると種が混入</li>
+</ul>
+<p>満開判定は房ごとに行います。樹勢や日当たりで開花がずれるため、<strong>1房ずつ観察</strong>して処理します。</p>
+<h2 id="2回目処理ジベレリンフルメット満開後1015日">2回目処理：ジベレリン＋フルメット（満開後10〜15日）</h2>
+<p>果粒が3〜5mm（マッチ棒の頭〜小豆大）になった頃に、ジベレリン25ppm＋フルメット5ppmで再度浸漬します。</p>
+<ul>
+<li><strong>目的</strong>: 果粒を大きくする</li>
+<li><strong>フルメットの効果</strong>: ジベレリン単独より粒のサイズが上がる</li>
+<li><strong>過剰使用は薬害</strong>: 5ppm厳守。多いと裂果や縮果のリスク</li>
+</ul>
+<h2 id="縮果症のリスクに注意">縮果症のリスクに注意</h2>
+<p>2回目のジベレリン処理後、<strong>30日間〜粒が軟化するまでの間は、摘芯や副梢整理を行わない</strong> ことが重要です。詳しくは別記事の <a href="2026-05-05_grape-shrinking-fruit">ぶどう縮果症対策</a> をご覧ください。</p>
+<h2 id="道具と準備">道具と準備</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>道具</th><th>用途</th></tr></thead><tbody><tr><td>プラスチックカップ</td><td>浸漬用（房が入る深さ）</td></tr><tr><td>計量スポイト</td><td>薬剤の正確な計量</td></tr><tr><td>色素（ベニコール等）</td><td>処理済み房の識別用（任意）</td></tr><tr><td>ゴム手袋・マスク・保護メガネ</td><td>安全装備（必須）</td></tr></tbody></table>
+<p>色素を加えると、処理後の房がうっすら色づきます。<strong>処理漏れ・二度処理の防止</strong>に有効です。</p>
+<h2 id="失敗しがちなポイント">失敗しがちなポイント</h2>
+<ul>
+<li><strong>タイミングの誤り</strong>: 満開判定が甘いと無核化失敗</li>
+<li><strong>濃度ミス</strong>: 計算ミスで濃すぎ・薄すぎが起こる</li>
+<li><strong>降雨</strong>: 処理後12時間以内の雨は効果激減</li>
+<li><strong>未処理の房</strong>: 数えずに作業すると漏れる</li>
+<li><strong>食器との兼用</strong>: 浸漬カップは食品用と分ける</li>
+</ul> </article> <div style="margin-top:4rem;text-align:center;" data-astro-cid-zneyolrq> <a href="/tips" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.72rem;letter-spacing:0.2em;color:#3d6b30;font-family:'Georgia',serif;" data-astro-cid-zneyolrq> <span style="width:32px;height:1px;background:#3d6b30;display:inline-block;" data-astro-cid-zneyolrq></span> 栽培のヒント一覧へ
+</a> </div> </div> </div> </main> <footer style="background:var(--green-deep);padding:4rem 3rem;color:rgba(255,255,255,0.6);font-size:0.78rem;letter-spacing:0.1em;"> <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem;"> <div> <img src="/logo.svg" alt="はいばら農園" style="height:44px;filter:brightness(0) invert(1);opacity:0.7;margin-bottom:1rem;"> <p>ぶどう・桃・レモン・梨・野菜</p> <p style="margin-top:0.3rem;font-size:0.68rem;letter-spacing:0.15em;opacity:0.5;">HAIBARA FARM</p> </div> <nav style="display:flex;flex-direction:column;gap:0.6rem;text-align:right;"> <a href="/about" style="color:rgba(255,255,255,0.5);">農園について</a> <a href="/crops" style="color:rgba(255,255,255,0.5);">作物紹介</a> <a href="/blog" style="color:rgba(255,255,255,0.5);">栽培記録</a> <a href="/tips" style="color:rgba(255,255,255,0.5);">栽培のヒント</a> <a href="/contact" style="color:rgba(255,255,255,0.5);">お問い合わせ</a> <a href="/privacy" style="color:rgba(255,255,255,0.5);">プライバシーポリシー</a> </nav> </div> <div style="max-width:1100px;margin:2.5rem auto 0;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.65rem;letter-spacing:0.12em;opacity:0.4;">
+&copy; 2026 はいばら農園 ／ 奈良県宇陀市
+</div> </footer> </body></html>

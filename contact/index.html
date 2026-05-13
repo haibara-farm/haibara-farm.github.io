@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="はいばら農園へのご質問・ご相談はこちらから。ぶどう・桃・レモン・梨・野菜の栽培についてお気軽にお問い合わせください。"><meta name="generator" content="Astro v6.1.7"><link rel="canonical" href="https://haibara-farm.github.io/contact/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="はいばら農園"><meta property="og:title" content="お問い合わせ | はいばら農園"><meta property="og:description" content="はいばら農園へのご質問・ご相談はこちらから。ぶどう・桃・レモン・梨・野菜の栽培についてお気軽にお問い合わせください。"><meta property="og:url" content="https://haibara-farm.github.io/contact/"><meta property="og:image" content="https://haibara-farm.github.io/og-image.jpg"><meta property="og:locale" content="ja_JP"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="お問い合わせ | はいばら農園"><meta name="twitter:description" content="はいばら農園へのご質問・ご相談はこちらから。ぶどう・桃・レモン・梨・野菜の栽培についてお気軽にお問い合わせください。"><meta name="twitter:image" content="https://haibara-farm.github.io/og-image.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet"><title>お問い合わせ | はいばら農園</title><link rel="stylesheet" href="/_astro/Layout.DgQ1kQ3Y.css">
+<link rel="stylesheet" href="/_astro/contact@_@astro.DfW68TzV.css"></head> <body> <header id="site-header" class> <a href="/" id="site-logo-link"> <img src="/logo.svg" alt="はいばら農園" id="site-logo"> </a> <nav id="site-nav"> <a href="/about" class="nav-link">農園について</a> <a href="/crops" class="nav-link">作物紹介</a> <a href="/blog" class="nav-link">栽培記録</a> <a href="/calendar" class="nav-link">栽培暦</a> <a href="/tips" class="nav-link">栽培のヒント</a> <a href="/contact" class="nav-link">お問い合わせ</a> </nav> <button id="site-nav-toggle" aria-label="メニュー" aria-expanded="false"> <span></span><span></span><span></span> </button> </header>  <script>
+      (function() {
+        const header = document.getElementById('site-header');
+        const startedHero = header.classList.contains('is-hero');
+
+        let lastScrollY = window.scrollY;
+        const HIDE_THRESHOLD = 80; // この位置を超えるとhide可能
+
+        window.addEventListener('scroll', () => {
+          const currentY = window.scrollY;
+
+          // ヒーローページの背景切替
+          if (startedHero) {
+            if (currentY > 60) {
+              header.classList.remove('is-hero');
+            } else {
+              header.classList.add('is-hero');
+            }
+          }
+
+          // ナビが開いている時 or 最上部付近では隠さない
+          if (header.classList.contains('nav-open') || currentY < HIDE_THRESHOLD) {
+            header.classList.remove('is-hidden');
+          } else if (currentY > lastScrollY) {
+            // 下スクロール → 隠す
+            header.classList.add('is-hidden');
+          } else if (currentY < lastScrollY) {
+            // 上スクロール → 表示
+            header.classList.remove('is-hidden');
+          }
+
+          lastScrollY = currentY;
+        }, { passive: true });
+
+        // ハンバーガーメニュー開閉
+        const toggle = document.getElementById('site-nav-toggle');
+        const nav = document.getElementById('site-nav');
+        if (toggle) {
+          toggle.addEventListener('click', () => {
+            const open = header.classList.toggle('nav-open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            // メニュー開く時は隠さない
+            if (open) header.classList.remove('is-hidden');
+          });
+          // ナビ内リンククリックで閉じる
+          nav.querySelectorAll('.nav-link').forEach(a => {
+            a.addEventListener('click', () => {
+              header.classList.remove('nav-open');
+              toggle.setAttribute('aria-expanded', 'false');
+            });
+          });
+        }
+      })();
+    </script> <main> <div class="page" data-astro-cid-uw5kdbxl> <div class="page-inner" style="--page-max: 720px;" data-astro-cid-uw5kdbxl> <p class="page-eyebrow" data-astro-cid-uw5kdbxl>CONTACT</p> <h1 data-astro-cid-uw5kdbxl>お問い合わせ</h1> <p class="page-lead" data-astro-cid-uw5kdbxl>ご質問・ご相談は下記フォームよりお気軽にどうぞ。</p> <!-- 受付状況のお知らせ --> <div class="notice-card" data-astro-cid-uw5kdbxl> <p class="notice-label" data-astro-cid-uw5kdbxl>NOTICE ／ 販売について</p> <p class="notice-title" data-astro-cid-uw5kdbxl>現在、サイトでの販売・予約受付は行っておりません</p> <p class="notice-body" data-astro-cid-uw5kdbxl>
+ぶどうの収穫は <strong data-astro-cid-uw5kdbxl>9月頃</strong> を予定しています。<br data-astro-cid-uw5kdbxl>
+現在は知人を中心とした少量のお届けを行っており、サイトでの販売準備は今後段階的に進める予定です。<br data-astro-cid-uw5kdbxl>
+具体的な販売方法が決まりましたら、本サイトでご案内いたします。
+</p> </div> <!-- 販売の方針 --> <div class="page-section" data-astro-cid-uw5kdbxl><span data-astro-cid-uw5kdbxl>ABOUT ／ 当農園について</span></div> <div class="pcard" data-astro-cid-uw5kdbxl> <div class="pcard-head" data-astro-cid-uw5kdbxl><span class="name" data-astro-cid-uw5kdbxl>小規模・週末農家として運営しています</span></div> <div class="pcard-body" data-astro-cid-uw5kdbxl> <p data-astro-cid-uw5kdbxl>当農園は週末農家として小規模に運営しているため、<strong data-astro-cid-uw5kdbxl>収穫量に限りがあります</strong>。</p> <ul style="margin-top:0.8rem;padding-left:1.4rem;line-height:2;" data-astro-cid-uw5kdbxl> <li data-astro-cid-uw5kdbxl>栽培方法・品種・作業の様子など、ご質問はお気軽にお寄せください</li> <li data-astro-cid-uw5kdbxl>販売の方法・時期が決まり次第、本サイトでご案内します</li> <li data-astro-cid-uw5kdbxl>SNS等での情報発信も順次準備中です</li> </ul> <p style="margin-top:0.8rem;font-size:0.78rem;color:#6a7a60;" data-astro-cid-uw5kdbxl>
+※ 天候・生育状況により、計画通りに進まない場合があります。あらかじめご了承ください。
+</p> </div> </div> <!-- フォーム --> <div class="page-section" data-astro-cid-uw5kdbxl><span data-astro-cid-uw5kdbxl>FORM ／ お問い合わせフォーム</span></div> <div class="pcard" data-astro-cid-uw5kdbxl> <div class="pcard-head" data-astro-cid-uw5kdbxl><span class="name" data-astro-cid-uw5kdbxl>お問い合わせフォーム</span></div> <div class="pcard-body" style="padding:2rem 1.4rem;text-align:center;" data-astro-cid-uw5kdbxl> <p style="font-size:0.86rem;color:#3a3530;line-height:2;" data-astro-cid-uw5kdbxl>
+ご質問・ご相談は Google フォームよりお願いいたします。<br data-astro-cid-uw5kdbxl> <span style="font-size:0.74rem;color:#8a9a80;" data-astro-cid-uw5kdbxl>（別画面で開きます）</span> </p> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWozNfYUCLow9AR8tSymNP-1vyfGp-yulmYWVjsArP5iJa-A/viewform?usp=header" target="_blank" rel="noopener" class="form-btn" data-astro-cid-uw5kdbxl>
+フォームを開く
+<span style="margin-left:0.5rem;" data-astro-cid-uw5kdbxl>→</span> </a> <p style="margin-top:1.2rem;font-size:0.7rem;color:#8a9a80;line-height:1.7;" data-astro-cid-uw5kdbxl>
+ご質問内容を自由にご記入ください。<br data-astro-cid-uw5kdbxl>
+数日以内にメールにてご返信いたします。<br data-astro-cid-uw5kdbxl> <a href="/privacy" style="color:#6a7a60;text-decoration:underline;" data-astro-cid-uw5kdbxl>個人情報の取り扱いについて</a> </p> </div> </div> <!-- 収穫スケジュール --> <div class="page-section" data-astro-cid-uw5kdbxl><span data-astro-cid-uw5kdbxl>SCHEDULE ／ 収穫スケジュール</span></div> <div class="pcard" data-astro-cid-uw5kdbxl> <div class="pcard-head" data-astro-cid-uw5kdbxl><span class="name" data-astro-cid-uw5kdbxl>2026年 収穫の目安</span></div> <div class="pcard-body" style="padding:0.4rem 0;" data-astro-cid-uw5kdbxl> <table class="schedule-table" data-astro-cid-uw5kdbxl> <thead data-astro-cid-uw5kdbxl> <tr data-astro-cid-uw5kdbxl><th data-astro-cid-uw5kdbxl>作物</th><th data-astro-cid-uw5kdbxl>収穫時期</th><th data-astro-cid-uw5kdbxl>販売情報</th></tr> </thead> <tbody data-astro-cid-uw5kdbxl> <tr data-astro-cid-uw5kdbxl> <td data-astro-cid-uw5kdbxl>ぶどう（シャインマスカット）</td> <td data-astro-cid-uw5kdbxl>9月下旬</td> <td data-astro-cid-uw5kdbxl><span class="status-tag" data-astro-cid-uw5kdbxl>販売情報は別途案内</span></td> </tr><tr data-astro-cid-uw5kdbxl> <td data-astro-cid-uw5kdbxl>ぶどう（マスカットノワール）</td> <td data-astro-cid-uw5kdbxl>9月下旬</td> <td data-astro-cid-uw5kdbxl><span class="status-tag" data-astro-cid-uw5kdbxl>販売情報は別途案内</span></td> </tr><tr data-astro-cid-uw5kdbxl> <td data-astro-cid-uw5kdbxl>ぶどう（クイーンニーナ）</td> <td data-astro-cid-uw5kdbxl>9月下旬</td> <td data-astro-cid-uw5kdbxl><span class="status-tag" data-astro-cid-uw5kdbxl>販売情報は別途案内</span></td> </tr> </tbody> </table> <p class="schedule-note" data-astro-cid-uw5kdbxl>※ 天候により前後します。販売の方法・時期が決まり次第、本サイトでご案内いたします。</p> </div> </div> <!-- その他連絡 --> <div class="page-section" data-astro-cid-uw5kdbxl><span data-astro-cid-uw5kdbxl>OTHER ／ その他のご連絡</span></div> <div class="pcard" data-astro-cid-uw5kdbxl> <div class="pcard-head" data-astro-cid-uw5kdbxl><span class="name" data-astro-cid-uw5kdbxl>メール</span></div> <div class="pcard-body" data-astro-cid-uw5kdbxl> <p data-astro-cid-uw5kdbxl>フォームをご利用いただけない場合は、下記アドレスまで直接メールでご連絡ください。</p> <p style="margin-top:0.6rem;font-family:'Georgia',serif;font-size:0.92rem;" data-astro-cid-uw5kdbxl> <a href="mailto:haibara.farm@gmail.com" style="color:#3d6b30;" data-astro-cid-uw5kdbxl>haibara.farm@gmail.com</a> </p> </div> </div> <div class="pcard" data-astro-cid-uw5kdbxl> <div class="pcard-head" data-astro-cid-uw5kdbxl><span class="name" data-astro-cid-uw5kdbxl>SNS</span></div> <div class="pcard-body" data-astro-cid-uw5kdbxl> <p style="color:#8a9a80;font-size:0.82rem;" data-astro-cid-uw5kdbxl>準備中</p> </div> </div> </div> </div> </main> <footer style="background:var(--green-deep);padding:4rem 3rem;color:rgba(255,255,255,0.6);font-size:0.78rem;letter-spacing:0.1em;"> <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem;"> <div> <img src="/logo.svg" alt="はいばら農園" style="height:44px;filter:brightness(0) invert(1);opacity:0.7;margin-bottom:1rem;"> <p>ぶどう・桃・レモン・梨・野菜</p> <p style="margin-top:0.3rem;font-size:0.68rem;letter-spacing:0.15em;opacity:0.5;">HAIBARA FARM</p> </div> <nav style="display:flex;flex-direction:column;gap:0.6rem;text-align:right;"> <a href="/about" style="color:rgba(255,255,255,0.5);">農園について</a> <a href="/crops" style="color:rgba(255,255,255,0.5);">作物紹介</a> <a href="/blog" style="color:rgba(255,255,255,0.5);">栽培記録</a> <a href="/tips" style="color:rgba(255,255,255,0.5);">栽培のヒント</a> <a href="/contact" style="color:rgba(255,255,255,0.5);">お問い合わせ</a> <a href="/privacy" style="color:rgba(255,255,255,0.5);">プライバシーポリシー</a> </nav> </div> <div style="max-width:1100px;margin:2.5rem auto 0;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.65rem;letter-spacing:0.12em;opacity:0.4;">
+&copy; 2026 はいばら農園 ／ 奈良県宇陀市
+</div> </footer> </body></html>

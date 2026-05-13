@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 左の峰 -->
+  <path d="M2,44 C4,44 7,38 11,32 Q14,28 17,32 C21,38 24,44 28,44"
+    fill="none" stroke="#a0b888" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 右の峰 -->
+  <path d="M36,44 C40,44 43,38 47,32 Q50,28 53,32 C57,38 60,44 62,44"
+    fill="none" stroke="#a0b888" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 中央の主峰（大和富士） -->
+  <path d="M10,44 C16,44 22,30 28,18 Q32,12 36,18 C42,30 48,44 54,44"
+    fill="none" stroke="#5a7a4a" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- 地平線 -->
+  <line x1="0" y1="44" x2="64" y2="44" stroke="#c0d0a8" stroke-width="1"/>
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      path { stroke: #b8d49e; }
+      line { stroke: #6a8a58; }
+    }
+  </style>
+</svg>

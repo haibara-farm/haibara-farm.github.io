@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="お探しのページは見つかりませんでした。はいばら農園のトップページから目的のページをお探しください。"><meta name="generator" content="Astro v6.1.7"><link rel="canonical" href="https://haibara-farm.github.io/404/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="はいばら農園"><meta property="og:title" content="ページが見つかりません | はいばら農園"><meta property="og:description" content="お探しのページは見つかりませんでした。はいばら農園のトップページから目的のページをお探しください。"><meta property="og:url" content="https://haibara-farm.github.io/404/"><meta property="og:image" content="https://haibara-farm.github.io/og-image.jpg"><meta property="og:locale" content="ja_JP"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ページが見つかりません | はいばら農園"><meta name="twitter:description" content="お探しのページは見つかりませんでした。はいばら農園のトップページから目的のページをお探しください。"><meta name="twitter:image" content="https://haibara-farm.github.io/og-image.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet"><title>ページが見つかりません | はいばら農園</title><link rel="stylesheet" href="/_astro/Layout.DgQ1kQ3Y.css">
+<style>.link-grid[data-astro-cid-zetdm5md]{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem}.link-card[data-astro-cid-zetdm5md]{display:flex;flex-direction:column;gap:.4rem;padding:1.1rem 1.2rem;background:#fff;border:1px solid #ece8e0;border-radius:6px;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s}.link-card[data-astro-cid-zetdm5md]:hover{border-color:#6a9458;transform:translateY(-1px)}.link-eyebrow[data-astro-cid-zetdm5md]{font-family:Georgia,serif;font-size:.62rem;letter-spacing:.2em;color:#8a9a80}.link-title[data-astro-cid-zetdm5md]{font-family:"Noto Serif JP",serif;font-size:.95rem;color:#3a3530;letter-spacing:.06em}@media(max-width:480px){.link-grid[data-astro-cid-zetdm5md]{grid-template-columns:1fr}}
+</style></head> <body> <header id="site-header" class> <a href="/" id="site-logo-link"> <img src="/logo.svg" alt="はいばら農園" id="site-logo"> </a> <nav id="site-nav"> <a href="/about" class="nav-link">農園について</a> <a href="/crops" class="nav-link">作物紹介</a> <a href="/blog" class="nav-link">栽培記録</a> <a href="/calendar" class="nav-link">栽培暦</a> <a href="/tips" class="nav-link">栽培のヒント</a> <a href="/contact" class="nav-link">お問い合わせ</a> </nav> <button id="site-nav-toggle" aria-label="メニュー" aria-expanded="false"> <span></span><span></span><span></span> </button> </header>  <script>
+      (function() {
+        const header = document.getElementById('site-header');
+        const startedHero = header.classList.contains('is-hero');
+
+        let lastScrollY = window.scrollY;
+        const HIDE_THRESHOLD = 80; // この位置を超えるとhide可能
+
+        window.addEventListener('scroll', () => {
+          const currentY = window.scrollY;
+
+          // ヒーローページの背景切替
+          if (startedHero) {
+            if (currentY > 60) {
+              header.classList.remove('is-hero');
+            } else {
+              header.classList.add('is-hero');
+            }
+          }
+
+          // ナビが開いている時 or 最上部付近では隠さない
+          if (header.classList.contains('nav-open') || currentY < HIDE_THRESHOLD) {
+            header.classList.remove('is-hidden');
+          } else if (currentY > lastScrollY) {
+            // 下スクロール → 隠す
+            header.classList.add('is-hidden');
+          } else if (currentY < lastScrollY) {
+            // 上スクロール → 表示
+            header.classList.remove('is-hidden');
+          }
+
+          lastScrollY = currentY;
+        }, { passive: true });
+
+        // ハンバーガーメニュー開閉
+        const toggle = document.getElementById('site-nav-toggle');
+        const nav = document.getElementById('site-nav');
+        if (toggle) {
+          toggle.addEventListener('click', () => {
+            const open = header.classList.toggle('nav-open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            // メニュー開く時は隠さない
+            if (open) header.classList.remove('is-hidden');
+          });
+          // ナビ内リンククリックで閉じる
+          nav.querySelectorAll('.nav-link').forEach(a => {
+            a.addEventListener('click', () => {
+              header.classList.remove('nav-open');
+              toggle.setAttribute('aria-expanded', 'false');
+            });
+          });
+        }
+      })();
+    </script> <main> <div class="page" data-astro-cid-zetdm5md> <div class="page-inner" style="--page-max: 640px;" data-astro-cid-zetdm5md> <p class="page-eyebrow" data-astro-cid-zetdm5md>404 NOT FOUND</p> <h1 data-astro-cid-zetdm5md>ページが見つかりません</h1> <p class="page-lead" data-astro-cid-zetdm5md>お探しのページは移動または削除された可能性があります。</p> <div class="pcard" style="margin-top:2rem;" data-astro-cid-zetdm5md> <div class="pcard-body" style="text-align:center;padding:2.5rem 1.4rem;" data-astro-cid-zetdm5md> <p style="font-family:'Noto Serif JP',serif;font-size:1.6rem;color:#6a7a60;letter-spacing:0.15em;margin-bottom:0.6rem;" data-astro-cid-zetdm5md>404</p> <p style="font-size:0.86rem;color:#3a3530;line-height:2;" data-astro-cid-zetdm5md>
+URLにお間違いがないかご確認のうえ、<br data-astro-cid-zetdm5md>
+下記のメニューから目的のページをお探しください。
+</p> </div> </div> <div class="page-section" data-astro-cid-zetdm5md><span data-astro-cid-zetdm5md>SITEMAP ／ サイトマップ</span></div> <div class="link-grid" data-astro-cid-zetdm5md> <a href="/" class="link-card" data-astro-cid-zetdm5md> <span class="link-eyebrow" data-astro-cid-zetdm5md>HOME</span> <span class="link-title" data-astro-cid-zetdm5md>トップ</span> </a> <a href="/about" class="link-card" data-astro-cid-zetdm5md> <span class="link-eyebrow" data-astro-cid-zetdm5md>ABOUT</span> <span class="link-title" data-astro-cid-zetdm5md>農園について</span> </a> <a href="/crops" class="link-card" data-astro-cid-zetdm5md> <span class="link-eyebrow" data-astro-cid-zetdm5md>CROPS</span> <span class="link-title" data-astro-cid-zetdm5md>作物紹介</span> </a> <a href="/blog" class="link-card" data-astro-cid-zetdm5md> <span class="link-eyebrow" data-astro-cid-zetdm5md>JOURNAL</span> <span class="link-title" data-astro-cid-zetdm5md>栽培記録</span> </a> <a href="/calendar" class="link-card" data-astro-cid-zetdm5md> <span class="link-eyebrow" data-astro-cid-zetdm5md>CALENDAR</span> <span class="link-title" data-astro-cid-zetdm5md>栽培暦</span> </a> <a href="/tips" class="link-card" data-astro-cid-zetdm5md> <span class="link-eyebrow" data-astro-cid-zetdm5md>TIPS</span> <span class="link-title" data-astro-cid-zetdm5md>栽培のヒント</span> </a> <a href="/contact" class="link-card" data-astro-cid-zetdm5md> <span class="link-eyebrow" data-astro-cid-zetdm5md>CONTACT</span> <span class="link-title" data-astro-cid-zetdm5md>お問い合わせ</span> </a> </div> </div> </div> </main> <footer style="background:var(--green-deep);padding:4rem 3rem;color:rgba(255,255,255,0.6);font-size:0.78rem;letter-spacing:0.1em;"> <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem;"> <div> <img src="/logo.svg" alt="はいばら農園" style="height:44px;filter:brightness(0) invert(1);opacity:0.7;margin-bottom:1rem;"> <p>ぶどう・桃・レモン・梨・野菜</p> <p style="margin-top:0.3rem;font-size:0.68rem;letter-spacing:0.15em;opacity:0.5;">HAIBARA FARM</p> </div> <nav style="display:flex;flex-direction:column;gap:0.6rem;text-align:right;"> <a href="/about" style="color:rgba(255,255,255,0.5);">農園について</a> <a href="/crops" style="color:rgba(255,255,255,0.5);">作物紹介</a> <a href="/blog" style="color:rgba(255,255,255,0.5);">栽培記録</a> <a href="/tips" style="color:rgba(255,255,255,0.5);">栽培のヒント</a> <a href="/contact" style="color:rgba(255,255,255,0.5);">お問い合わせ</a> <a href="/privacy" style="color:rgba(255,255,255,0.5);">プライバシーポリシー</a> </nav> </div> <div style="max-width:1100px;margin:2.5rem auto 0;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.65rem;letter-spacing:0.12em;opacity:0.4;">
+&copy; 2026 はいばら農園 ／ 奈良県宇陀市
+</div> </footer> </body></html>

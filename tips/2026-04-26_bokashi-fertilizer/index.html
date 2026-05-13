@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="菜種油粕を米ぬか・もみ殻と混ぜて発酵させた「ぼかし肥料」の作り方と使い方。家庭農園・果樹に使いやすい配合と発酵管理のコツをまとめます。"><meta name="generator" content="Astro v6.1.7"><link rel="canonical" href="https://haibara-farm.github.io/tips/2026-04-26_bokashi-fertilizer/"><!-- Open Graph --><meta property="og:type" content="article"><meta property="og:site_name" content="はいばら農園"><meta property="og:title" content="ぼかし肥料の作り方（菜種油粕ベース） | はいばら農園"><meta property="og:description" content="菜種油粕を米ぬか・もみ殻と混ぜて発酵させた「ぼかし肥料」の作り方と使い方。家庭農園・果樹に使いやすい配合と発酵管理のコツをまとめます。"><meta property="og:url" content="https://haibara-farm.github.io/tips/2026-04-26_bokashi-fertilizer/"><meta property="og:image" content="https://haibara-farm.github.io/og-image.jpg"><meta property="og:locale" content="ja_JP"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ぼかし肥料の作り方（菜種油粕ベース） | はいばら農園"><meta name="twitter:description" content="菜種油粕を米ぬか・もみ殻と混ぜて発酵させた「ぼかし肥料」の作り方と使い方。家庭農園・果樹に使いやすい配合と発酵管理のコツをまとめます。"><meta name="twitter:image" content="https://haibara-farm.github.io/og-image.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet"><title>ぼかし肥料の作り方（菜種油粕ベース） | はいばら農園</title><link rel="stylesheet" href="/_astro/Layout.DgQ1kQ3Y.css">
+<style>.tips-body[data-astro-cid-zneyolrq] p{margin-bottom:1.2rem;line-height:2;color:#3a3530;font-size:.92rem}.tips-body[data-astro-cid-zneyolrq] h2{font-family:Zen Old Mincho,"Noto Serif JP",serif;font-size:1.15rem;margin:2.5rem 0 1rem;color:#2a4a22;padding-bottom:.5rem;border-bottom:1px solid #d8e0d0;letter-spacing:.05em}.tips-body[data-astro-cid-zneyolrq] h3{font-family:"Noto Serif JP",serif;font-size:1rem;margin:1.8rem 0 .6rem;color:#3d6b30;letter-spacing:.04em}.tips-body[data-astro-cid-zneyolrq] ul,.tips-body[data-astro-cid-zneyolrq] ol{margin:0 0 1.2rem 1.4rem;line-height:2}.tips-body[data-astro-cid-zneyolrq] li{margin-bottom:.3rem;font-size:.88rem}.tips-body[data-astro-cid-zneyolrq] strong{color:#2a4a22;font-weight:500}.tips-body[data-astro-cid-zneyolrq] table{width:100%;border-collapse:collapse;font-size:.84rem;margin:1.2rem 0}.tips-body[data-astro-cid-zneyolrq] th{text-align:left;padding:.55rem .7rem;background:#e8ede0;color:#3d6b30;font-size:.74rem;letter-spacing:.08em;font-weight:500;border-bottom:1px solid #d8e0d0}.tips-body[data-astro-cid-zneyolrq] td{padding:.6rem .7rem;border-bottom:1px solid #ece8e0;color:#3a3530}.tips-body[data-astro-cid-zneyolrq] blockquote{border-left:3px solid #6a9458;padding:.4rem 1rem;color:#6a7a60;font-size:.88rem;margin:1.2rem 0;background:#f5f2ec;border-radius:0 4px 4px 0}.tips-body[data-astro-cid-zneyolrq] code{background:#f0ede5;padding:.1rem .4rem;border-radius:3px;font-size:.84em;color:#3d6b30}
+</style></head> <body> <header id="site-header" class> <a href="/" id="site-logo-link"> <img src="/logo.svg" alt="はいばら農園" id="site-logo"> </a> <nav id="site-nav"> <a href="/about" class="nav-link">農園について</a> <a href="/crops" class="nav-link">作物紹介</a> <a href="/blog" class="nav-link">栽培記録</a> <a href="/calendar" class="nav-link">栽培暦</a> <a href="/tips" class="nav-link">栽培のヒント</a> <a href="/contact" class="nav-link">お問い合わせ</a> </nav> <button id="site-nav-toggle" aria-label="メニュー" aria-expanded="false"> <span></span><span></span><span></span> </button> </header>  <script>
+      (function() {
+        const header = document.getElementById('site-header');
+        const startedHero = header.classList.contains('is-hero');
+
+        let lastScrollY = window.scrollY;
+        const HIDE_THRESHOLD = 80; // この位置を超えるとhide可能
+
+        window.addEventListener('scroll', () => {
+          const currentY = window.scrollY;
+
+          // ヒーローページの背景切替
+          if (startedHero) {
+            if (currentY > 60) {
+              header.classList.remove('is-hero');
+            } else {
+              header.classList.add('is-hero');
+            }
+          }
+
+          // ナビが開いている時 or 最上部付近では隠さない
+          if (header.classList.contains('nav-open') || currentY < HIDE_THRESHOLD) {
+            header.classList.remove('is-hidden');
+          } else if (currentY > lastScrollY) {
+            // 下スクロール → 隠す
+            header.classList.add('is-hidden');
+          } else if (currentY < lastScrollY) {
+            // 上スクロール → 表示
+            header.classList.remove('is-hidden');
+          }
+
+          lastScrollY = currentY;
+        }, { passive: true });
+
+        // ハンバーガーメニュー開閉
+        const toggle = document.getElementById('site-nav-toggle');
+        const nav = document.getElementById('site-nav');
+        if (toggle) {
+          toggle.addEventListener('click', () => {
+            const open = header.classList.toggle('nav-open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            // メニュー開く時は隠さない
+            if (open) header.classList.remove('is-hidden');
+          });
+          // ナビ内リンククリックで閉じる
+          nav.querySelectorAll('.nav-link').forEach(a => {
+            a.addEventListener('click', () => {
+              header.classList.remove('nav-open');
+              toggle.setAttribute('aria-expanded', 'false');
+            });
+          });
+        }
+      })();
+    </script> <main> <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ぼかし肥料の作り方（菜種油粕ベース）","datePublished":"2026-04-26","image":"https://haibara-farm.github.io/og-image.jpg","author":{"@type":"Organization","name":"はいばら農園"},"publisher":{"@type":"Organization","name":"はいばら農園"},"keywords":"土づくり, ぼかし肥料, 有機肥料, 菜種油粕","mainEntityOfPage":"https://haibara-farm.github.io/tips/2026-04-26_bokashi-fertilizer/"}</script> <div class="page" data-astro-cid-zneyolrq> <div class="page-inner" style="--page-max: 760px;" data-astro-cid-zneyolrq> <p class="page-eyebrow" data-astro-cid-zneyolrq>TIPS</p> <p style="font-size:0.72rem;color:#8a9a80;letter-spacing:0.15em;font-family:'Georgia',serif;margin-bottom:0.4rem;" data-astro-cid-zneyolrq>2026-04-26</p> <h1 style="font-size:1.4rem;line-height:1.7;" data-astro-cid-zneyolrq>ぼかし肥料の作り方（菜種油粕ベース）</h1> <p style="font-size:0.86rem;color:#5a5048;line-height:2;margin-top:1rem;" data-astro-cid-zneyolrq>菜種油粕を米ぬか・もみ殻と混ぜて発酵させた「ぼかし肥料」の作り方と使い方。家庭農園・果樹に使いやすい配合と発酵管理のコツをまとめます。</p> <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:1rem;margin-bottom:2.5rem;" data-astro-cid-zneyolrq> <span class="tag-item" data-astro-cid-zneyolrq>土づくり</span><span class="tag-item" data-astro-cid-zneyolrq>ぼかし肥料</span><span class="tag-item" data-astro-cid-zneyolrq>有機肥料</span><span class="tag-item" data-astro-cid-zneyolrq>菜種油粕</span> </div> <article class="tips-body" data-astro-cid-zneyolrq> <p>菜種油粕は緩効性の有機肥料として優秀ですが、生のまま土に入れると土中で発酵し、ガスや熱、コガネムシなどを呼び込んでしまいます。事前に発酵させた「ぼかし肥料」にしておけば、すぐに効き、根に優しく、扱いやすくなります。</p>
+<h2 id="なぜぼかすのか">なぜぼかすのか</h2>
+<ul>
+<li><strong>発酵を済ませる</strong>ので施用後すぐに効きはじめる</li>
+<li><strong>根を傷めにくい</strong>（発酵熱・ガスのリスクがない）</li>
+<li>微生物の働きで養分が<strong>植物が吸いやすい形</strong>に変わる</li>
+<li>臭いも軽減され、扱いやすい</li>
+</ul>
+<h2 id="基本の配合">基本の配合</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>材料</th><th>比率</th><th>役割</th></tr></thead><tbody><tr><td>菜種油粕</td><td>5</td><td>主な養分（窒素源）</td></tr><tr><td>米ぬか</td><td>3</td><td>発酵スターター（微生物のエサ）</td></tr><tr><td>もみ殻</td><td>2</td><td>通気性・水分調整</td></tr><tr><td>水</td><td>適量</td><td>握って固まる程度</td></tr></tbody></table>
+<p>合計10kgなら、菜種油粕5kg＋米ぬか3kg＋もみ殻2kgに、水を1〜1.5L。</p>
+<blockquote>
+<p><strong>水分の目安</strong>：握って形が残り、押すと崩れる程度（含水40〜50%）。多すぎると腐敗し、少なすぎると発酵が立ち上がりません。</p>
+</blockquote>
+<h2 id="作り方">作り方</h2>
+<h3 id="1-混合">1. 混合</h3>
+<p>ブルーシートの上で材料を均一に混ぜる。水を少しずつ加えながら、ムラなく湿らせる。</p>
+<h3 id="2-仕込み">2. 仕込み</h3>
+<p>仕込み方は2通りあります。</p>
+<ul>
+<li><strong>嫌気発酵</strong>：ビニール袋・密閉容器・漬物樽に詰めて空気を抜き、密閉</li>
+<li><strong>好気発酵</strong>：山積みにしてシートをかぶせ、週1〜2回切り返し</li>
+</ul>
+<p>家庭農園では<strong>嫌気発酵が手軽</strong>でおすすめ。切り返し不要で、虫も湧きにくい。</p>
+<h3 id="3-発酵期間">3. 発酵期間</h3>
+<ul>
+<li><strong>嫌気</strong>：1〜3ヶ月（夏は早く、冬は長くなる）</li>
+<li><strong>好気</strong>：3週間〜1ヶ月（切り返しが必要）</li>
+</ul>
+<h3 id="4-完成のサイン">4. 完成のサイン</h3>
+<ul>
+<li><strong>甘酸っぱい・ヨーグルトのような香り</strong>（腐敗臭はNG）</li>
+<li>温度が下がって常温に戻る</li>
+<li>表面に<strong>白いカビ（コウジカビ）が出る</strong> → 成功</li>
+<li>黒・緑のカビが出たら失敗。捨てる</li>
+</ul>
+<h2 id="使い方">使い方</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>用途</th><th>量の目安</th><th>タイミング</th></tr></thead><tbody><tr><td>元肥</td><td>1平米あたり 200〜300g</td><td>植え付け2週間前</td></tr><tr><td>追肥</td><td>1平米あたり 100〜150g</td><td>生育期、株元から少し離して</td></tr><tr><td>果樹追肥</td><td>1樹あたり 500g〜1kg</td><td>4〜6月、樹冠下に浅くすき込む</td></tr></tbody></table>
+<p>施用後は<strong>軽く土をかぶせる</strong>か、<strong>水やりで馴染ませる</strong>と効果が出やすくなります。</p>
+<h2 id="よくある失敗と対処">よくある失敗と対処</h2>
+<ul>
+<li><strong>腐敗臭・ドブ臭がする</strong> → 水分過多。乾燥した米ぬかや籾殻を追加して水分を調整</li>
+<li><strong>発酵が立ち上がらない</strong> → 水分不足、または米ぬか不足。霧吹きで水分追加</li>
+<li><strong>冬に温度が上がらない</strong> → 発泡スチロール箱に入れて保温、期間を倍にする</li>
+<li><strong>カビが黒・緑</strong> → 雑菌が優位。一度全部捨てて、清潔な環境で再仕込み</li>
+</ul>
+<h2 id="はいばら農園での運用">はいばら農園での運用</h2>
+<ul>
+<li><strong>3月仕込み → 5月使用</strong>：野菜の元肥・果樹の追肥に</li>
+<li><strong>9月仕込み → 11月使用</strong>：来春に向けた元肥準備</li>
+</ul> </article> <div style="margin-top:4rem;text-align:center;" data-astro-cid-zneyolrq> <a href="/tips" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.72rem;letter-spacing:0.2em;color:#3d6b30;font-family:'Georgia',serif;" data-astro-cid-zneyolrq> <span style="width:32px;height:1px;background:#3d6b30;display:inline-block;" data-astro-cid-zneyolrq></span> 栽培のヒント一覧へ
+</a> </div> </div> </div> </main> <footer style="background:var(--green-deep);padding:4rem 3rem;color:rgba(255,255,255,0.6);font-size:0.78rem;letter-spacing:0.1em;"> <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem;"> <div> <img src="/logo.svg" alt="はいばら農園" style="height:44px;filter:brightness(0) invert(1);opacity:0.7;margin-bottom:1rem;"> <p>ぶどう・桃・レモン・梨・野菜</p> <p style="margin-top:0.3rem;font-size:0.68rem;letter-spacing:0.15em;opacity:0.5;">HAIBARA FARM</p> </div> <nav style="display:flex;flex-direction:column;gap:0.6rem;text-align:right;"> <a href="/about" style="color:rgba(255,255,255,0.5);">農園について</a> <a href="/crops" style="color:rgba(255,255,255,0.5);">作物紹介</a> <a href="/blog" style="color:rgba(255,255,255,0.5);">栽培記録</a> <a href="/tips" style="color:rgba(255,255,255,0.5);">栽培のヒント</a> <a href="/contact" style="color:rgba(255,255,255,0.5);">お問い合わせ</a> <a href="/privacy" style="color:rgba(255,255,255,0.5);">プライバシーポリシー</a> </nav> </div> <div style="max-width:1100px;margin:2.5rem auto 0;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.65rem;letter-spacing:0.12em;opacity:0.4;">
+&copy; 2026 はいばら農園 ／ 奈良県宇陀市
+</div> </footer> </body></html>
